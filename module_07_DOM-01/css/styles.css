@@ -1,0 +1,33 @@
+.text {
+    color: teal;
+}
+
+.text-red {
+    color: red;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    color: teal;
+    display: flex;
+    align-items: center;
+}
+
+.title::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.available::before {
+    background-color: green;
+}
+
+.not-available::before {
+    background: red;
+}
