@@ -1,5 +1,2 @@
-body {
-    color: red;
-    min-width: 300px;
-    background-color: teal;
-}
+@import './base.scss';
+@import './main.scss';
