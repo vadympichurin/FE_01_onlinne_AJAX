@@ -1,28 +1,41 @@
-const validator = require('validator');
+"use strict";
 
-const greeter = require('./greetier');
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var validator = require('validator');
+
+var greeter = require('./greetier');
 
 greeter("Hello Mnago!");
 
-const validateEmail = email => {
+var validateEmail = function validateEmail(email) {
   return validator.isEmail(email);
 };
 
 console.log('Is mango@mail.com a valid email?: ', validateEmail('mango@mail.com'));
 console.log('Is Mangozedog.com a valid email?: ', validateEmail('Mangozedog.com'));
 
-class User {
-  static hello = 'hi!';
+var User = /*#__PURE__*/function () {
+  // static hello = 'hi!';
+  function User(name) {
+    _classCallCheck(this, User);
 
-  constructor(name) {
     this._name = name;
   }
 
-  get name() {
-    return this._name;
-  }
+  _createClass(User, [{
+    key: "name",
+    get: function get() {
+      return this._name;
+    }
+  }]);
 
-}
+  return User;
+}();
 
-const mango = new User("Mango");
+var mango = new User("Mango");
 console.log(mango.name);

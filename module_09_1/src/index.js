@@ -19,7 +19,7 @@ const validateEmail = email => {
   );
 
   class User {
-    static hello = 'hi!';
+    // static hello = 'hi!';
 
     constructor(name){
       this._name = name;
