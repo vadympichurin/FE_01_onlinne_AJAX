@@ -1,0 +1,16 @@
+{{#each this}}
+  <li class="gallery_item">
+    <img class="flag_img" src="{{flag}}" alt="флаг {{name}}" />
+    <h2>{{name}}</h2>
+    <p><span class="text_bold">Столиця: </span>{{capital}}</p>
+    <p><span class="text_bold">Валюта: </span>{{currency}}</p>
+    <p><span class="text_bold">Мова: </span>{{language}}</p>
+    <p><span class="text_bold">Населення: </span>{{population}}</p>
+    {{#if infected}}
+      <p style="color: red">Країна інфікована, навколо зомбі, біжи звідси!!!</p>
+    {{/if}}
+    {{#unless infected}}
+      <p style="color: green">Країна чиста, можна їхати на відпочинок!</p>
+    {{/unless}}
+  </li>
+{{/each}}

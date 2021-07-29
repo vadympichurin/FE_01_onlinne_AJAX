@@ -1,0 +1,29 @@
+.gallery {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 24px;
+    max-width: calc(100% - 64px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery_item {
+    padding: 30px;
+}
+
+.flag_img {
+    height: 200px;
+    margin-bottom: 16px;
+    object-fit: cover;
+    width: 320px;
+    height: auto;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
