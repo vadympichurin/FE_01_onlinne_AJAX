@@ -47,7 +47,7 @@ const makePromise = delay => {
     });
 };
 
-makePromise(4000).then(console.log); // 
-makePromise(3000).then(console.log); // 
-makePromise(5000).then(console.log); // 
-makePromise(1000).then(console.log); 
+makePromise(4000).then(console.log); //3
+makePromise(3000).then(console.log); //2
+makePromise(5000).then(console.log); //4
+makePromise(1000).then(console.log); //1
